@@ -1,0 +1,38 @@
+.nav_bar {
+	background-color: #222222;
+	padding: 70px;
+	margin-bottom: 80px;
+}
+
+
+.logo {
+	display: block;
+	margin: auto;
+	height: 85px;
+	margin-bottom: 40px;
+}
+
+.nav {
+	text-align: center;
+}
+
+.nav a {
+	font-family: rockwell, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	margin-left: 50px;
+	margin-right: 50px;
+	font-size: 40px;
+	color: grey;
+	line-height: 50px;
+	text-decoration: none;
+
+	-moz-transition: all .1s ease-in;
+    -o-transition: all .1s ease-in;
+    -webkit-transition: all .1s ease-in;
+    transition: all .1s ease-in;
+}
+	
+.nav a:hover {
+	color: white;
+}

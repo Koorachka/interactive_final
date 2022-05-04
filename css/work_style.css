@@ -1,0 +1,75 @@
+body {
+background-color: #000000;
+}
+
+.flex-container {
+	position: relative;
+	float: left;
+	gap: 9.6%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.flex-item1 {
+	position: relative;
+	width: 35.2%;
+}
+
+.flex-item2 {
+	position: relative;
+	width: 35.2%;
+}
+
+
+.flex-item1 img {
+	width: 100%;
+}
+
+.flex-item2 img {
+	width: 100%;
+}
+
+@media only screen and (max-width: 796px) {
+	.flex-item1, .flex-item2 {
+		width: 85%;
+	}
+
+	.flex-container {
+		row-gap: 30px;
+	}
+}
+
+.text {
+	position: absolute;
+	top: 39%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 35px;
+    font-family: Rockwell, sans-serif;
+    font-weight: 400;
+	font-style: normal;
+}
+
+.overlayFade{
+	height: 100%;
+	width: 100%;
+    top:0;
+    background-color: #ff946bbd;
+}
+.overlay {
+	width: 100%;
+    position: absolute;
+    opacity: 0;
+    transition:all .3s ease;
+    background-color: black;
+}
+
+.flex-item1:hover .overlay,.flex-item1:hover .overlayFade {
+    opacity: .8;
+}
+
+.flex-item2:hover .overlay,.flex-item2:hover .overlayFade {
+    opacity: .8;
+}
